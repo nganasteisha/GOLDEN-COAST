@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Відгуки | Golden Coast</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="hero">
+
+<nav class="top-menu">
+
+<div class="logo">
+
+GOLDEN COAST
+
+<div class="hotel-stars">
+★★★★☆
+<span>4.5 Luxury Resort</span>
+</div>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Головна</a></li>
+<li><a href="about.html">Про нас</a></li>
+<li><a href="restaurant.html">Ресторан</a></li>
+<li><a href="services.html">Послуги</a></li>
+<li><a href="news.html">Новинки</a></li>
+<li><a href="reviews.html">Відгуки</a></li>
+<li><a href="contacts.html">Контакти</a></li>
+
+</ul>
+
+</nav>
+
+<div class="hero-content">
+
+<h1>
+ВІДГУКИ
+</h1>
+
+<p>
+Думки гостей про Golden Coast
+</p>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<aside class="side-menu">
+
+<h2>
+Меню комплексу
+</h2>
+
+<ul>
+
+<li><a href="rooms.html">Номери</a></li>
+
+<li><a href="spa.html">SPA / Sauna</a></li>
+
+<li><a href="pool.html">Басейн</a></li>
+
+<li><a href="beach.html">Beach Zone</a></li>
+
+<li><a href="dance.html">Танцювальна зона</a></li>
+
+</ul>
+
+</aside>
+
+<main class="content">
+
+<h1>
+Відгуки гостей Golden Coast
+</h1>
+
+<p>
+Гості комплексу Golden Coast
+діляться своїми враженнями
+про luxury atmosphere,
+premium service
+та відпочинок
+на узбережжі моря.
+</p>
+
+<p>
+Нижче ви можете
+залишити власний відгук
+та переглянути коментарі
+інших гостей комплексу.
+</p>
+
+<div class="review-form">
+
+<h2>
+Залишити відгук
+</h2>
+
+<input type="text" id="name" placeholder="Ваше ім’я">
+
+<textarea id="message" placeholder="Напишіть ваш відгук"></textarea>
+
+<select id="rating">
+
+<option value="★★★★★">
+★★★★★
+</option>
+
+<option value="★★★★☆">
+★★★★☆
+</option>
+
+<option value="★★★☆☆">
+★★★☆☆
+</option>
+
+<option value="★★☆☆☆">
+★★☆☆☆
+</option>
+
+<option value="★☆☆☆☆">
+★☆☆☆☆
+</option>
+
+</select>
+
+<button onclick="addReview()">
+Додати відгук
+</button>
+
+</div>
+
+<div id="reviews-container">
+
+<div class="review-box">
+
+<h2>
+Олена
+</h2>
+
+<p>
+Неймовірна атмосфера,
+дуже красивий комплекс
+та premium service.
+Особливо сподобалась
+VIP rooftop zone
+та sunset evenings.
+</p>
+
+<span>
+★★★★★
+</span>
+
+</div>
+
+<div class="review-box">
+
+<h2>
+Максим
+</h2>
+
+<p>
+Дуже сподобався ресторан,
+cocktail menu
+та beach atmosphere.
+Персонал ввічливий,
+а вечірня атмосфера
+просто luxury.
+</p>
+
+<span>
+★★★★★
+</span>
+
+</div>
+
+<div class="review-box negative">
+
+<h2>
+Ірина
+</h2>
+
+<p>
+Комплекс дуже красивий,
+але у вихідні
+було занадто багато людей
+біля басейну.
+Проте SPA зона
+дуже сподобалась.
+</p>
+
+<span>
+★★★☆☆
+</span>
+
+</div>
+
+<div class="review-box">
+
+<h2>
+Влад
+</h2>
+
+<p>
+Pool party
+та sunset atmosphere
+просто неймовірні.
+Обов’язково повернемось
+ще раз влітку.
+</p>
+
+<span>
+★★★★★
+</span>
+
+</div>
+
+<div class="review-box negative">
+
+<h2>
+Софія
+</h2>
+
+<p>
+Ресторан хороший,
+але замовлення чекали
+трохи довше,
+ніж очікували.
+В іншому —
+дуже гарне місце.
+</p>
+
+<span>
+★★★★☆
+</span>
+
+</div>
+
+<div class="review-box negative">
+
+<h2>
+Андрій
+</h2>
+
+<p>
+Beach zone гарна,
+але ввечері
+було занадто шумно.
+Хотілось би
+більше relax atmosphere.
+</p>
+
+<span>
+★★☆☆☆
+</span>
+
+</div>
+
+<div class="review-box negative">
+
+<h2>
+Катерина
+</h2>
+
+<p>
+Номери красиві,
+але room service
+затримався майже на годину.
+Очікували швидше.
+</p>
+
+<span>
+★★★☆☆
+</span>
+
+</div>
+
+<div class="review-box negative">
+
+<h2>
+Олег
+</h2>
+
+<p>
+VIP rooftop виглядає красиво,
+але ціни трохи завищені.
+Коктейлі хороші,
+але чекали більшого.
+</p>
+
+<span>
+★★☆☆☆
+</span>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+import {
+getFirestore,
+collection,
+addDoc,
+getDocs,
+query,
+orderBy
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+
+apiKey: "AIzaSyCIK5GlfvJLveV_sXZevjuQzbRUZpwIXQ4",
+
+authDomain: "golden-coast-5e4d4.firebaseapp.com",
+
+projectId: "golden-coast-5e4d4",
+
+storageBucket: "golden-coast-5e4d4.firebasestorage.app",
+
+messagingSenderId: "899030021579",
+
+appId: "1:899030021579:web:bbc9b280a5560d014a324e",
+
+measurementId: "G-CNHXRLGSR2"
+
+};
+
+const app = initializeApp(firebaseConfig);
+
+const db = getFirestore(app);
+
+loadReviews();
+
+window.addReview = async function(){
+
+let name = document.getElementById("name").value;
+
+let message = document.getElementById("message").value;
+
+let rating = document.getElementById("rating").value;
+
+if(name === "" || message === ""){
+
+alert("Заповніть усі поля");
+
+return;
+
+}
+
+let reviewData = {
+
+name:name,
+
+message:message,
+
+rating:rating,
+
+date:Date.now()
+
+};
+
+await addDoc(collection(db, "reviews"), reviewData);
+
+showReview(reviewData);
+
+document.getElementById("name").value = "";
+
+document.getElementById("message").value = "";
+
+};
+
+function showReview(data){
+
+let review = document.createElement("div");
+
+if(
+data.rating === "★★☆☆☆" ||
+data.rating === "★☆☆☆☆" ||
+data.rating === "★★★☆☆"
+){
+review.classList.add("review-box", "negative");
+}else{
+review.classList.add("review-box");
+}
+
+review.innerHTML = `
+
+<h2>${data.name}</h2>
+
+<p>${data.message}</p>
+
+<span>${data.rating}</span>
+
+`;
+
+document.getElementById("reviews-container").prepend(review);
+
+}
+
+async function loadReviews(){
+
+const q = query(
+collection(db, "reviews"),
+orderBy("date", "desc")
+);
+
+const querySnapshot = await getDocs(q);
+
+querySnapshot.forEach((doc) => {
+
+showReview(doc.data());
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>
