@@ -531,24 +531,6 @@ min-width:190px;
 padding:8px;
 }
 
-.popup-menu a{
-font-size:14px;
-padding:9px 12px;
-}
-
-.popup-menu a{
-color:white !important;
-text-decoration:none;
-}
-
-.popup-menu a:visited{
-color:white !important;
-}
-
-.popup-menu a:hover{
-color:#d4a55d !important;
-}
-
 }
 
 }
